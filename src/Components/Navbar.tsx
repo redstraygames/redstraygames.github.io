@@ -7,7 +7,7 @@ export function Navbar() {
             <img src={logo} alt="Red Stray Logo" />
             <div className="flex gap-4 items-center">
                 {/* Facebook Icon */}
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/people/Red-Stray-Games/61569859752654" target="_blank" rel="noopener noreferrer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -33,7 +33,7 @@ export function Navbar() {
                     </svg>
                 </a>
                 {/* TikTok Icon */}
-                <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.tiktok.com/@redstraygames" target="_blank" rel="noopener noreferrer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
