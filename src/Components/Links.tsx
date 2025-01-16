@@ -22,13 +22,13 @@ export function NavbarLinks({ isMobile, onLinkClick }: NavbarLinksProps) {
       >
         About
       </Link>
-      <Link
+      {/* <Link
         to="/games"
         className="text-xl font-roboto text-white hover:underline hover:text-customRed"
         onClick={onLinkClick}
       >
         Games
-      </Link>
+      </Link> */}
       <Link
         to="/assets"
         className="text-xl font-roboto text-white hover:underline hover:text-customRed"

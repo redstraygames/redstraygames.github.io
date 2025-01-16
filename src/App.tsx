@@ -8,9 +8,9 @@ import { Games } from './Components/Games'
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen gap-4">
       <Navbar />
-      <div className="flex-grow">
+      <div className="flex-grow flex justify-center">
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<Games />} />
