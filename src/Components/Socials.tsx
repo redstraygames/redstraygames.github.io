@@ -1,6 +1,6 @@
 export function Socials() {
     return (
-        <div className="flex gap-4 items-center">
+        <div className=" hidden md:flex gap-4 items-center ">
             {/* Steam Icon */}
             {/* <a href="https://store.steampowered.com/developer/RedStrayGames" target="_blank" rel="noopener noreferrer">
                 <svg

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export function NavbarLinks() {
     return (
-        <div className="flex gap-4 items-center">
+        <div className="hidden md:flex gap-4 items-center">
         <Link to="/about" className="text-xl font-roboto text-white hover:underline hover:text-customRed">
             About
         </Link>

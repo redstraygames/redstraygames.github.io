@@ -3,6 +3,8 @@ import './App.css'
 import { Main } from './Components/Main'
 import { Navbar } from './Components/Navbar'
 import { Footer } from './Components/Footer'
+import { About } from './Components/About'
+import { Games } from './Components/Games'
 
 function App() {
   return (
@@ -10,8 +12,8 @@ function App() {
       <Navbar />
       <div className="flex-grow">
         <Routes>
-          <Route path="/about" element={<div>About Page</div>} />
-          <Route path="/games" element={<div>Games Page</div>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/games" element={<Games />} />
           <Route path="/assets" element={<div>Assets Page</div>} />
         </Routes>
       </div>
