@@ -1,6 +1,20 @@
-export function Socials() {
+// Socials.tsx
+type SocialsProps = {
+    variant?: "navbar" | "footer";
+  };
+
+export function Socials({ variant = "navbar" }: SocialsProps) {
+
     return (
-        <div className="hidden md:flex gap-4 items-center mr-8">
+        <div
+        className={
+            variant === "navbar"
+                ? // "navbar" version: Hide on mobile, show on md and up
+                "hidden md:flex gap-4 items-center mr-8"
+                : // "footer" version: Show on mobile, hide on md and up
+                "flex md:hidden flex-col gap-4 items-center"
+            }
+        >
             {/* Discord Icon */}
             <a
                 href="https://discord.gg/89cDN5HA"

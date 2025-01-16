@@ -19,13 +19,11 @@ export function Navbar() {
 
   return (
     <nav className="flex place-content-around bg-black pt-2 pb-2 items-center relative">
-      {/* Logo */}
       <Link to="/">
         <img src={logo} alt="Red Stray Logo" />
       </Link>
-
-      {/* Social icons (always visible in this example) */}
-      <Socials />
+      {/* Socials only on desktop */}
+      <Socials variant="navbar" />
 
       {/* Desktop Nav Links (horizontal). Hidden on mobile. */}
       <NavbarLinks />
