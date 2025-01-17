@@ -1,10 +1,14 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Main } from './Components/Main'
 import { Navbar } from './Components/Navbar'
 import { Footer } from './Components/Footer'
 import { About } from './Components/About'
 import { Games } from './Components/Games'
+import { useEffect } from 'react'
+import { Main } from './Components/Main'
+
+
+
 
 function App() {
   return (
@@ -12,11 +16,12 @@ function App() {
       <Navbar />
       <div className="flex-grow flex justify-center">
         <Routes>
+          <Route path="/" element={<Main/>} />
           <Route path="/about" element={<About />} />
           <Route path="/games" element={<Games />} />
-          <Route path="/assets" element={<div>Assets Page</div>} />
         </Routes>
       </div>
+
       <Footer />
     </div>
   );

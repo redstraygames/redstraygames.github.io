@@ -5,6 +5,13 @@ type NavbarLinksProps = {
   onLinkClick?: () => void;
 };
 
+export const onClickUrl = (url: string): (() => void) => () => openInNewTab(url)
+
+export const openInNewTab = (url: string): void => {
+  const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+  if (newWindow) newWindow.opener = null
+}
+
 export function NavbarLinks({ isMobile, onLinkClick }: NavbarLinksProps) {
   // Decide which container styles to use:
   // - Desktop: "hidden md:flex gap-4 items-center"
@@ -29,13 +36,16 @@ export function NavbarLinks({ isMobile, onLinkClick }: NavbarLinksProps) {
       >
         Games
       </Link> */}
-      <Link
-        to="/assets"
+      <a
+        href=""
         className="text-xl font-roboto text-white hover:underline hover:text-customRed"
-        onClick={onLinkClick}
+        onClick={onClickUrl("https://redstrayassets.org/")}
       >
         Assets
-      </Link>
+        <span className="ml-1" aria-hidden="true">
+          🡕
+        </span>
+    </a>
     </div>
   );
 }
