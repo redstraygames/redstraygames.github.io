@@ -2,7 +2,7 @@
   "name": "redstraygames-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://redstraygames.github.io/redstraygames.github.io",
+  "homepage": "https://redstraygames.github.io/redstraygames.com",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",

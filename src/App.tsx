@@ -4,10 +4,7 @@ import { Navbar } from './Components/Navbar'
 import { Footer } from './Components/Footer'
 import { About } from './Components/About'
 import { Games } from './Components/Games'
-import { useEffect } from 'react'
 import { Main } from './Components/Main'
-
-
 
 
 function App() {

@@ -17,7 +17,7 @@ export function Socials({ variant = "navbar" }: SocialsProps) {
         >
             {/* Discord Icon */}
             <a
-                href="https://discord.gg/89cDN5HA"
+                href="https://discord.gg/8kH5vpwmub"
                 target="_blank"
                 rel="noopener noreferrer"
             >
